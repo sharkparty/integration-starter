@@ -1,0 +1,30 @@
+{
+  "name": "integration-starter",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --watch-all",
+    "lint": "eslint ./src --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharkparty/integration-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sharkparty/integration-starter/issues"
+  },
+  "homepage": "https://github.com/sharkparty/integration-starter#readme",
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.0.0",
+    "jest": "^27.4.7"
+  },
+  "dependencies": {
+    "axios": "^0.25.0"
+  }
+}
