@@ -29,13 +29,13 @@ describe('Integration test', () => {
   };
   const mockAPI = {};
 
-  it('returns FALSE for a failing condition', async () => {
+  it('returns TRUE for a failing condition', async () => {
     axios.get.mockResolvedValueOnce({ status: 200 });
     const subject = await integraion(mockEvent, mockAPI);
     expect(subject).toBeTruthy();
   });
 
-  it('returns TRUE for a failing condition', async () => {
+  it('returns FALSE for a failing condition', async () => {
     axios.get.mockResolvedValueOnce({ status: 400 });
     const subject = await integraion(mockEvent, mockAPI);
     expect(subject).toBeFalsy();
